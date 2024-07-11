@@ -1,0 +1,51 @@
+/*
+=================== 
+  google fonts
+=================== 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/*
+=================== 
+   css reset
+=================== 
+*/
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #1f1f1f;
+}
+
+/*
+=================== 
+   resued css
+=================== 
+*/
+
+.my__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/*
+=================== 
+  custom css
+=================== 
+*/
