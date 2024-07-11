@@ -1,0 +1,96 @@
+/* ! Breakpoint lists
+* max-width:320px
+* max-width:375px
+* max-width:425px
+* max-width:600px
+* max-width:768px
+* max-width:1024px
+* max-width:1200px
+* max-width:1356px
+* max-width:1440px
+* max-width:1700px
+* max-width:1920px
+* max-width:2560px
+*/
+
+/*===============================
+    Responsive Code placed Here
+=================================*/
+
+/* *********************
+todo: max-width:320px 
+************************/
+@media only screen and (max-width: 320px) {
+}
+/* *********************
+todo: max-width:375px 
+************************/
+@media only screen and (max-width: 375px) {
+}
+/* *********************
+todo: max-width:425px 
+************************/
+@media only screen and (max-width: 425px) {
+}
+/* *********************
+todo: max-width:600px 
+************************/
+@media only screen and (max-width: 600px) {
+}
+/* *********************
+todo: max-width:768px 
+************************/
+@media only screen and (max-width: 768px) {
+  .my__navigation-lists {
+    display: none;
+  }
+  .my__header-style {
+    background-image: linear-gradient(
+      to right,
+      #c59d5f 55%,
+      #c59d5f 45%
+    ) !important;
+  }
+  .my__logo-section {
+    background-color: transparent !important;
+  }
+}
+/* *********************
+todo: max-width:1024px 
+************************/
+@media only screen and (max-width: 1024px) {
+}
+/* *********************
+todo: max-width:1200px 
+************************/
+@media only screen and (max-width: 1200px) {
+}
+/* *********************
+todo: max-width:1356px 
+************************/
+@media only screen and (max-width: 1356px) {
+}
+/* *********************
+todo: max-width:1440px 
+************************/
+@media only screen and (max-width: 1440px) {
+  .my__contact-section {
+    display: none !important;
+  }
+  .my__header-left-width {
+    width: 100%;
+  }
+  .my__header-style {
+    background-image: linear-gradient(to right, #111111 55%, #111111 45%);
+  }
+}
+/* *********************
+todo: max-width:1700px 
+************************/
+@media only screen and (max-width: 1700px) {
+}
+/* *********************
+todo: max-width:2560px 
+************************/
+@media only screen and (max-width: 2560px) {
+}

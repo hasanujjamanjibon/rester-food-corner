@@ -20,15 +20,19 @@
   </head>
 
   <body>
-    <header class="my__header-style sticky-top top-0 z-3">
+    <header class="my__header-style sticky-top top-0 ">
       <nav class="my__container my__navbar d-flex align-items-center">
-        <div class="my__header-left-width d-flex align-items-center h-100">
+        <div
+          class="my__header-left-width d-flex align-items-center h-100 position-relative"
+        >
           <!-- *logo  -->
-          <div class="bg-primary h-100 px-4 d-flex align-items-center">
-            <img class="" src="./resources/images/logo/logo.png" alt="" />
+          <div
+            class="bg-primary h-100 px-4 d-flex align-items-center my__logo-section"
+          >
+            <img src="./resources/images/logo/logo.png" alt="logo" />
           </div>
           <!-- * Navigation list -->
-          <div class="h-100 w-100">
+          <div class="h-100 w-100 my__navigation-lists">
             <ul
               class="d-flex justify-content-center align-items-center h-100 w-100 gap-3 fw-semibold"
             >
@@ -120,7 +124,7 @@
         </div>
         <!-- * contact section -->
         <div
-          class="d-flex align-items-center justify-content-center gap-3 flex-grow-1"
+          class="d-flex align-items-center justify-content-center gap-3 flex-grow-1 my__contact-section"
         >
           <!-- *input search -->
           <div
