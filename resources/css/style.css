@@ -213,9 +213,11 @@ body {
 ? ********************************************/
 .my__hero-section {
   height: calc(100dvh - 6.25rem);
+  /* height: max-content !important; */
 }
 .my__hero-section > .row {
   padding: 0 3.875rem;
+  height: 100%;
 }
 .my__bg-gradient {
   background-image: linear-gradient(to right, #111111 58.4%, #272727 42.6%);
