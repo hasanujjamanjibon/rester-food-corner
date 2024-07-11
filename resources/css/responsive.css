@@ -9,6 +9,7 @@
 * max-width:1356px
 * max-width:1440px
 * max-width:1700px
+* max-width:1862px
 * max-width:1920px
 * max-width:2560px
 */
@@ -51,9 +52,6 @@ todo: max-width:768px
       #c59d5f 45%
     ) !important;
   }
-  .my__logo-section {
-    background-color: transparent !important;
-  }
 }
 /* *********************
 todo: max-width:1024px 
@@ -74,12 +72,6 @@ todo: max-width:1356px
 todo: max-width:1440px 
 ************************/
 @media only screen and (max-width: 1440px) {
-  .my__contact-section {
-    display: none !important;
-  }
-  .my__header-left-width {
-    width: 100%;
-  }
   .my__header-style {
     background-image: linear-gradient(to right, #111111 55%, #111111 45%);
   }
@@ -88,6 +80,14 @@ todo: max-width:1440px
 todo: max-width:1700px 
 ************************/
 @media only screen and (max-width: 1700px) {
+}
+/* *********************
+todo: max-width:1700px 
+************************/
+@media only screen and (min-width: 1862px) {
+  .my__contact {
+    display: block !important;
+  }
 }
 /* *********************
 todo: max-width:2560px 

@@ -20,119 +20,133 @@
   </head>
 
   <body>
-    <header class="my__header-style sticky-top top-0 ">
-      <nav class="my__container my__navbar d-flex align-items-center">
+    <header class="sticky-top top-0">
+      <nav class="my__container my__navbar d-flex align-items-center row">
+        <!-- *logo  -->
         <div
-          class="my__header-left-width d-flex align-items-center h-100 position-relative"
+          class="bg-primary h-100 d-flex px-4 align-items-center my__logo-section col-10 col-md-11 col-lg-3 col-xl-2"
         >
-          <!-- *logo  -->
-          <div
-            class="bg-primary h-100 px-4 d-flex align-items-center my__logo-section"
+          <img
+            class="my__logo"
+            src="./resources/images/logo/logo.png"
+            alt="logo"
+          />
+        </div>
+        <!-- * Navigation list -->
+        <div
+          class="h-100 bg-black my__navigation-lists d-none d-lg-flex col-lg-8 col-xl-5 col-xxl-5"
+        >
+          <ul
+            class="d-flex justify-content-center align-items-center h-100 w-100 gap-3 fw-semibold"
           >
-            <img src="./resources/images/logo/logo.png" alt="logo" />
-          </div>
-          <!-- * Navigation list -->
-          <div class="h-100 w-100 my__navigation-lists">
-            <ul
-              class="d-flex justify-content-center align-items-center h-100 w-100 gap-3 fw-semibold"
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
             >
-              <li class="text-uppercase d-flex align-items-center">
-                home
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                  class="bi bi-plus-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
-                  />
-                </svg>
-              </li>
-              <li class="text-uppercase d-flex align-items-center">
-                pages
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                  class="bi bi-plus-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
-                  />
-                </svg>
-              </li>
-              <li class="text-uppercase d-flex align-items-center">
-                menus
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                  class="bi bi-plus-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
-                  />
-                </svg>
-              </li>
-              <li class="text-uppercase d-flex align-items-center">
-                shop
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                  class="bi bi-plus-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
-                  />
-                </svg>
-              </li>
-              <li class="text-uppercase d-flex align-items-center">
-                blog
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                  class="bi bi-plus-lg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
-                  />
-                </svg>
-              </li>
-              <li class="text-uppercase d-flex align-items-center">
-                contact us
-              </li>
-            </ul>
-          </div>
+              home
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#fff"
+                class="bi bi-plus-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                />
+              </svg>
+            </li>
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
+            >
+              pages
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#fff"
+                class="bi bi-plus-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                />
+              </svg>
+            </li>
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
+            >
+              menus
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#fff"
+                class="bi bi-plus-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                />
+              </svg>
+            </li>
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
+            >
+              shop
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#fff"
+                class="bi bi-plus-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                />
+              </svg>
+            </li>
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
+            >
+              blog
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#fff"
+                class="bi bi-plus-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                />
+              </svg>
+            </li>
+            <li
+              class="text-uppercase d-flex align-items-center justify-content-center"
+            >
+              contact us
+            </li>
+          </ul>
         </div>
         <!-- * contact section -->
         <div
-          class="d-flex align-items-center justify-content-center gap-3 flex-grow-1 my__contact-section"
+          class="d-none d-xl-flex h-100 bg-dark col-xl-4 col-xxl-4 align-items-center justify-content-center gap-3 my__contact-section"
         >
           <!-- *input search -->
           <div
-            class="position-relative bg-secondary rounded-pill my__contact-division overflow-hidden"
+            class="position-relative rounded-pill my__contact-division overflow-hidden"
           >
             <input
               type="text"
-              class="form-control bg-transparent border-0 my__input-field text-light px-5"
+              class="form-control bg-transparent my__input-field text-light px-5 border-0"
               placeholder="Enter keyword..."
               aria-label="Enter keyword..."
               aria-describedby="basic-addon2"
@@ -164,17 +178,21 @@
             >
           </div>
           <!-- *contact -->
-          <div class="ps-4 my__contact">
+          <div class="ps-4 my__contact d-none">
             <div class="text-white d-flex align-items-center gap-2">
-              <img src="./resources\images\icon\phone.png" alt="" />
-              <span>+987-82-18015</span>
+              <img
+                class="my__contact-icon"
+                src="./resources/images/icon/phone.png"
+                alt=""
+              />
+              <span class="my__contact-number">+987-82-18015</span>
             </div>
-            <span class="fs-6">Contact us for reservation</span>
+            <span class="my__contact-title">Contact us for reservation</span>
           </div>
         </div>
         <!-- * humberger menu -->
         <div
-          class="bg-primary y my__menu-div h-100 d-flex justify-content-center align-items-center"
+          class="bg-primary my__menu-div h-100 justify-content-center align-items-center d-flex col-2 col-md-1 h-100"
         >
           <!-- *my__menu-icon -->
           <div class="my__menu-icon" id="menu-icon">

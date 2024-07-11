@@ -62,24 +62,33 @@ body {
 =================== 
 */
 
-/******************************
-Header section css Here 
-*/
+/* *****************************
+! ==> Header section css Here  
+? *******************************/
 .my__navbar {
-  height: 100px;
+  height: 6.25rem;
 }
 .my__header-style {
   background-image: linear-gradient(to right, #111111 55%, #272727 45%);
-  height: 6.25rem;
-  /* z-index: 99999999 !important; */
+  height: 80px !important;
 }
-.my__header-left-width {
-  width: 55%;
+.my__logo {
+  width: 11.6875rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+}
+
+.my__navigation-lists > ul > li {
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.75rem;
+  text-transform: uppercase;
 }
 .my__contact-division {
-  width: fit-content;
+  width: max-content;
   height: fit-content;
 }
+
 .my__contact-division .bi-search {
   top: 0.75rem;
   bottom: 0;
@@ -91,9 +100,14 @@ Header section css Here
   font-size: 0.875rem;
   width: 20rem;
   height: 3.125rem;
+  flex-shrink: 0;
 }
 .my__input-field::placeholder {
   color: #5c6574;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 171.429% */
 }
 .my__cart-icon {
   padding: 0.9375rem !important;
@@ -109,13 +123,27 @@ Header section css Here
 .my__contact {
   border-left: 0.0625rem solid #5c6574;
 }
-.my__contact > span {
+.my__contact-icon {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  flex-shrink: 0;
+}
+.my__contact > .my__contact-number {
   color: #8e97a6;
   font-size: 0.875rem !important;
+  color: #fff;
+  /* font-family: "ZCOOL XiaoWei"; */
+  font-size: 1.375rem;
+  line-height: 1.75rem; /* 127.273% */
+}
+.my__contact-title {
+  color: #8e97a6;
+  font-size: 0.875rem;
+  line-height: 1.5rem; /* 171.429% */
 }
 .my__menu-div {
-  height: 6.25rem !important;
-  width: 6.25rem;
+  /* height: 6.25rem !important; */
+  /* width: 80px; */
 }
 .my__menu-div:hover {
   background-color: #111111 !important;
@@ -160,7 +188,7 @@ Header section css Here
   padding: 1.875rem 0.625rem;
 }
 .my__dropdown.show {
-  top: 6.25rem;
+  top: 80px;
 }
 .my__dropdown ul li {
   padding: 1.25rem 0;
