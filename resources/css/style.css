@@ -4,7 +4,10 @@
 =================== 
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 /*
+
 /*
 =================== 
   bootsrap icon
@@ -52,10 +55,25 @@ body {
 */
 
 .my__container {
-  max-width: 2560px;
+  max-width: 160rem;
   margin: 0 auto;
 }
-
+.btn {
+  background-color: #c59d5f;
+  text-transform: uppercase;
+  display: flex;
+  padding: 1.7375rem 3.725rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  font-size: 1.45rem !important;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 0;
+}
+.btn:hover {
+  background-color: #1f1f1f;
+}
 /*
 =================== 
   custom css
@@ -68,10 +86,7 @@ body {
 .my__navbar {
   height: 6.25rem;
 }
-.my__header-style {
-  background-image: linear-gradient(to right, #111111 55%, #272727 45%);
-  height: 80px !important;
-}
+
 .my__logo {
   width: 11.6875rem;
   height: 3.75rem;
@@ -105,8 +120,6 @@ body {
 .my__input-field::placeholder {
   color: #5c6574;
   font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5rem; /* 171.429% */
 }
 .my__cart-icon {
@@ -128,11 +141,9 @@ body {
   height: 1.4375rem;
   flex-shrink: 0;
 }
-.my__contact > .my__contact-number {
-  color: #8e97a6;
-  font-size: 0.875rem !important;
+.my__contact .my__contact-number {
   color: #fff;
-  /* font-family: "ZCOOL XiaoWei"; */
+  font-family: "ZCOOL XiaoWei", sans-serif;
   font-size: 1.375rem;
   line-height: 1.75rem; /* 127.273% */
 }
@@ -141,10 +152,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.5rem; /* 171.429% */
 }
-.my__menu-div {
-  /* height: 6.25rem !important; */
-  /* width: 80px; */
-}
+
 .my__menu-div:hover {
   background-color: #111111 !important;
   transition: 0.3s ease-in-out !important;
@@ -188,7 +196,7 @@ body {
   padding: 1.875rem 0.625rem;
 }
 .my__dropdown.show {
-  top: 80px;
+  top: 6.25rem;
 }
 .my__dropdown ul li {
   padding: 1.25rem 0;
@@ -198,4 +206,90 @@ body {
 .my__dropdown ul li:hover {
   background-color: #000;
   transition: 0.3s ease-in-out;
+}
+
+/* *******************************************
+! ==> main content ==> Hero section css Here  
+? ********************************************/
+.my__hero-section {
+  height: calc(100dvh - 6.25rem);
+}
+.my__hero-section > .row {
+  padding: 0 3.875rem;
+}
+.my__bg-gradient {
+  background-image: linear-gradient(to right, #111111 58.4%, #272727 42.6%);
+}
+.my-hero-content-leftside {
+  justify-content: center;
+  background: url("/resources/images/background/icon-Texture.png") #ffffffe6 0 0 /
+    100% 100% no-repeat !important;
+}
+
+.my__hero-content {
+  width: max-content !important;
+  gap: 3.125rem;
+}
+.my__hero-content > h3 {
+  /* width: max-content !important; */
+  color: #c59d5f;
+  font-family: "Great Vibes", cursive;
+  font-size: 4.5rem !important;
+  position: relative;
+  line-height: 3.125rem; /* 125% */
+  text-transform: capitalize;
+}
+.my__hero-content > h3::before {
+  content: "";
+  position: absolute;
+  left: -5.625rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5rem;
+  height: 0.0625rem;
+  background-color: #c59d5f;
+}
+.my__hero-content > h3::after {
+  content: "";
+  position: absolute;
+  right: -5.625rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5rem;
+  height: 0.0625rem;
+  background-color: #c59d5f;
+}
+
+.my__hero-content > h1 {
+  color: #1f1f1f;
+  text-align: center;
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  font-size: 10.25rem;
+  line-height: 10.875rem; /* 106.098% */
+  text-transform: capitalize;
+  max-width: 50rem;
+}
+.my-hero-content-rightside {
+  background: #c59d5f !important;
+}
+.my__bottom-leaf {
+  left: 3.75rem;
+  z-index: 1;
+  height: 28.75rem;
+}
+
+.my-hero-content-rightside > .my__banner-dishesImg {
+  max-height: auto;
+  width: 790px !important;
+  right: 350px;
+  transform: scale(1.2);
+  top: 200px;
+  position: absolute;
+}
+.my__shape {
+  right: 50px;
+  top: 0;
+  position: absolute;
 }
