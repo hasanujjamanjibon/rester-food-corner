@@ -20,6 +20,256 @@
   </head>
 
   <body>
+    <header class="my__header-style sticky-top top-0 z-3">
+      <nav class="my__container my__navbar d-flex align-items-center">
+        <div class="my__header-left-width d-flex align-items-center h-100">
+          <!-- *logo  -->
+          <div class="bg-primary h-100 px-4 d-flex align-items-center">
+            <img class="" src="./resources/images/logo/logo.png" alt="" />
+          </div>
+          <!-- * Navigation list -->
+          <div class="h-100 w-100">
+            <ul
+              class="d-flex justify-content-center align-items-center h-100 w-100 gap-3 fw-semibold"
+            >
+              <li class="text-uppercase d-flex align-items-center">
+                home
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                pages
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                menus
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                shop
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                blog
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                contact us
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- * contact section -->
+        <div
+          class="d-flex align-items-center justify-content-center gap-3 flex-grow-1"
+        >
+          <!-- *input search -->
+          <div
+            class="position-relative bg-secondary rounded-pill my__contact-division overflow-hidden"
+          >
+            <input
+              type="text"
+              class="form-control bg-transparent border-0 my__input-field text-light px-5"
+              placeholder="Enter keyword..."
+              aria-label="Enter keyword..."
+              aria-describedby="basic-addon2"
+            />
+            <i
+              class="bi bi-search position-absolute"
+              style="color: #c59d5f"
+            ></i>
+          </div>
+          <!-- *cart icon -->
+          <div
+            class="position-relative d-flex justify-content-center align-items-center border border-1 border-white w-auto my__cart-icon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="#fff"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+            <span
+              class="badge text-bg-primary rounded-circle text-white position-absolute my__badge"
+              >0</span
+            >
+          </div>
+          <!-- *contact -->
+          <div class="ps-4 my__contact">
+            <div class="text-white d-flex align-items-center gap-2">
+              <img src="./resources\images\icon\phone.png" alt="" />
+              <span>+987-82-18015</span>
+            </div>
+            <span class="fs-6">Contact us for reservation</span>
+          </div>
+        </div>
+        <!-- * humberger menu -->
+        <div
+          class="bg-primary y my__menu-div h-100 d-flex justify-content-center align-items-center"
+        >
+          <!-- *my__menu-icon -->
+          <div class="my__menu-icon" id="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <!-- *Dropdown content -->
+          <div id="dropdown-links" class="position-absolute my__dropdown">
+            <ul class="block fw-semibold">
+              <li class="text-uppercase d-flex align-items-center">
+                home
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                pages
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                menus
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                shop
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                blog
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#fff"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                  />
+                </svg>
+              </li>
+              <li class="text-uppercase d-flex align-items-center">
+                contact us
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!-- Bootrsap JS -->
     <script src="./vendors/js/bootstrap.bundle.min.js"></script>
     <!-- js file link -->
