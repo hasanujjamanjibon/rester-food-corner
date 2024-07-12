@@ -122,8 +122,8 @@ todo: max-width:1024px
     font-size: 0.8rem !important ;
   }
   .my__banner-dishesImg {
-    max-height: 480px !important;
-    max-width: 480px !important;
+    max-height: 470px !important;
+    max-width: 470px !important;
   }
   .my__hero-section > .row {
     padding: 0 5.5rem;
@@ -152,15 +152,17 @@ todo: max-width:768px
   .my__navigation-lists {
     display: none;
   }
-
+  .my__hero-section > .row {
+    padding: 0 4.5rem;
+  }
   .my__hero-content > h3 {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
     line-height: 2rem !important; /* 125% */
   }
 
   .my__hero-content > h1 {
-    font-size: 5.5rem !important;
-    line-height: 5.5rem !important; /* 106.098% */
+    font-size: 5rem !important;
+    line-height: 5rem !important; /* 106.098% */
   }
   .btn {
     padding: 1rem 2rem !important;
@@ -172,6 +174,10 @@ todo: max-width:768px
       #111111 58.4%,
       #111111 42.6%
     ) !important;
+  }
+  .my__hero-section > .row {
+    height: fit-content;
+    gap: 0 !important;
   }
   .my-hero-content-leftside {
     align-items: flex-start !important;
