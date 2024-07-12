@@ -121,6 +121,21 @@ todo: max-width:1356px
     line-height: 7rem !important;
   }
 }
+
+@media only screen and (max-width: 1600px) {
+  .my__about-section {
+    max-width: 1470px;
+    margin: 120px auto 0;
+    background-color: #fff;
+    height: fit-content !important;
+    padding: 60px 10px;
+    justify-content: center;
+  }
+  .my__aboutImag-container {
+    display: none;
+  }
+}
+
 /* *********************
 todo: max-width:1440px 
 ************************/
@@ -269,6 +284,9 @@ todo: max-width:1199px
       #111111 42.6%
     ) !important;
   }
+  .my__about-section {
+    margin: 120px 10px 0;
+  }
 }
 /* *********************
 todo: max-width:768px 
@@ -312,6 +330,22 @@ todo: max-width:768px
       0 / 100% 100% no-repeat !important;
     height: auto !important;
   }
+  .bookingBtn a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .bookingBtn {
+    padding: 0em 0.6em;
+    min-width: 172px;
+    min-height: 50px;
+    align-self: center;
+  }
+  /* .my__about-content {
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 /* *********************
@@ -344,19 +378,74 @@ todo: max-width:768px
   .my__cta-leftContent .col-sm-8,
   .my__cta-rightContent .col-sm-4,
   .my__cta-rightContent .col-sm-8 {
-    align-items: center !important;
+    align-items: start !important;
   }
   .my__cta-leftContent,
   .my__cta-rightContent {
-    position: static !important;
+    position: relative !important;
+    left: 20px;
   }
   .my__cta-leftContent img,
   .my__cta-rightContent img {
     padding: 30px 0 0;
     position: static;
   }
+  .about-heading {
+    font-size: 37px;
+    line-height: 47px;
+  }
 }
 
+/* *********************
+todo: max-width:576px 
+************************/
+@media only screen and (max-width: 576px) {
+  .food-chef-content .row .col-sm-6 {
+    gap: 20px !important;
+    width: 252px;
+    padding: 30px 0 0;
+  }
+  .food-chef-content .row {
+    display: flex;
+    justify-content: start;
+    border: 0;
+  }
+  .food-chef-content .row > div:last-child {
+    border-left: 0;
+    padding-left: 0 !important;
+  }
+
+  .food-chef-content .row .col-sm-6 {
+    width: 100%;
+  }
+  .my__about-section {
+    padding: 60px 20px;
+  }
+  .my__cta-leftContent p,
+  .my__cta-rightContent p {
+    margin: 10px 0 25px;
+    line-height: 25px;
+  }
+  .bookingBtn {
+    padding: 0em 0.6em;
+    min-width: 150px;
+    min-height: 42px;
+  }
+  .bookingBtn a {
+    font-size: 12px;
+  }
+  .my__cta-leftContent .col-sm-4,
+  .my__cta-leftContent .col-sm-8,
+  .my__cta-rightContent .col-sm-4,
+  .my__cta-rightContent .col-sm-8 {
+    align-items: center !important;
+  }
+  .my__cta-leftContent,
+  .my__cta-rightContent {
+    position: relative;
+    left: 10px;
+  }
+}
 /* *********************
 todo: max-width:425px 
 ************************/
@@ -364,7 +453,16 @@ todo: max-width:425px
   .my__hero-content {
     gap: 2rem;
   }
-
+  .about-heading {
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
+  .about-description {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 9px;
+  }
   .my__hero-content > h3 {
     font-size: 1.5rem !important;
   }
@@ -383,6 +481,22 @@ todo: max-width:425px
   }
   .my__hero-section > .row {
     height: calc(100dvh - 6.25rem) !important;
+  }
+  .about-heading {
+    font-size: 26px;
+    line-height: 33px;
+    margin-top: 9px;
+  }
+  .about-description {
+    font-size: 11px;
+    line-height: 21px;
+    margin-top: 9px;
+  }
+  .food-chef-content {
+    margin-top: 0px;
+  }
+  .food-chef-content span {
+    margin-top: 10px;
   }
 }
 /* *********************
