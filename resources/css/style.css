@@ -217,7 +217,8 @@ body {
 }
 .my__hero-section > .row {
   padding: 0 3.875rem;
-  height: 100%;
+  height: fit-content;
+
 }
 .my__bg-gradient {
   background-image: linear-gradient(to right, #111111 58.4%, #272727 42.6%);
@@ -283,15 +284,23 @@ body {
 }
 
 .my-hero-content-rightside > .my__banner-dishesImg {
-  max-height: auto;
+  /* max-height: auto;
   width: 790px !important;
   right: 350px;
   transform: scale(1.2);
   top: 200px;
-  position: absolute;
+  position: absolute; */
+
 }
 .my__shape {
   right: 50px;
   top: 0;
   position: absolute;
+}
+/* .my__navigation{
+  padding: 10px 0;
+} */
+.my__navigation img {
+  height: 100px;
+  width: auto;
 }
