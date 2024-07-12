@@ -298,23 +298,21 @@
       <!-- ====================================================
        ! ==>    Hero section placed Here
        ========================================================  -->
-      <section
-        class="my__bg-gradient my__hero-section position-xl-relative z-2"
-      >
-        <img
-          class="bottom-0 position-absolute my__bottom-leaf d-none d-xl-block"
-          src="./resources/images/hero-section/Leaf-1.png"
-          alt="leaf"
-        />
-        <img
-          class="start-50 position-absolute my__bottom-leaf2 d-none d-xl-block"
-          src="./resources/images/hero-section/Leaf-2.png"
-          alt="leaf"
-        />
+      <section class="my__bg-gradient my__hero-section position-relative z-2">
         <div class="row">
           <div
-            class="col-12 col-md-12 col-xl-7 my-hero-content-leftside h-100 d-flex align-items-center"
+            class="col-12 col-md-12 col-xl-7 my-hero-content-leftside position-relative h-100 d-flex align-items-center"
           >
+            <img
+              class="my__bottom-leaf d-none d-xl-block"
+              src="./resources/images/hero-section/Leaf-1.png"
+              alt="leaf"
+            />
+            <img
+              class="my__bottom-leaf-2 d-none d-xl-block"
+              src="./resources/images/hero-section/Leaf-2.png"
+              alt="leaf"
+            />
             <div
               class="d-flex flex-column align-items-center w-100 my__hero-content"
             >
@@ -326,10 +324,10 @@
             </div>
           </div>
           <div
-            class="col-12 col-md-12 col-xl-5 my-hero-content-rightside position-relative"
+            class="col-12 col-md-12 col-xl-5 position-relative my-hero-content-rightside"
           >
             <img
-              class="my__banner-dishesImg position-relative"
+              class="my__banner-dishesImg"
               src="./resources/images/hero-section/banner-dishes/banner-dishes-1.png"
               alt="banner-dishes-1"
             />
@@ -341,7 +339,7 @@
           </div>
         </div>
         <div
-          class="my__navigation d-none d-md-flex justify-content-center align-items-center gap-4"
+          class="my__navigation  py-4 d-none d-md-flex justify-content-center align-items-center gap-4"
         >
           <img
             src="./resources/images/hero-section/banner-dishes/banner-dishes-1.png"
