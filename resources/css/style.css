@@ -66,7 +66,7 @@ button {
   background-color: #c59d5f;
   text-transform: uppercase;
   display: flex;
-  padding: 1.7375rem 3.725rem;
+  padding: 27.8px 59.6px;
   justify-content: center;
   align-items: center;
   color: #fff !important;
@@ -295,7 +295,7 @@ main {
 ? *******************************/
 .my__swiper-slide {
   height: 26.69rem;
-  max-width: 1720px !important;
+  max-width: 1600px !important;
   padding: 0 3rem;
   margin: 0 auto !important;
   display: flex;
@@ -314,6 +314,7 @@ main {
   transition: transform 0.5s ease-in-out;
   gap: 1.875rem;
   padding: 0 0.2rem;
+  height: 20rem;
 }
 
 .my__slide {
@@ -324,13 +325,32 @@ main {
   height: 9.375rem;
   flex-shrink: 0;
   border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
 }
-
-/* .my__slide img {
-  width: 100%;
-  display: block;
-} */
+.my__silde-title {
+  color: #1f1f1f !important;
+  text-align: center;
+  font-family: "ZCOOL XiaoWei";
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: capitalize;
+  padding-bottom: 60px !important;
+  position: relative;
+  top: -15px;
+}
+.my__slide img {
+  /* position: relative;
+  top: -30px; */
+  height: 118px;
+  width: auto;
+  filter: drop-shadow(1px 17px 10px #bcaeae);
+}
 .my__swiper-slide > .nextBtn {
   right: -50px;
   z-index: 1;
@@ -340,4 +360,82 @@ main {
   left: -50px;
   z-index: 1;
   width: auto;
+}
+
+/* **********************************
+? ==> CTA section css Here  
+* ********************************/
+.my__cta-section {
+  max-width: 1470px !important;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px !important;
+}
+
+.my__cta-left,
+.my__cta-right {
+  width: 100%;
+  max-width: 630px;
+  height: 349px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: url("/resources/images/bg-fire.png") #111 no-repeat center;
+}
+.my__cta-leftContent,
+.my__cta-rightContent {
+  height: 100%;
+  position: relative;
+  left: 40px;
+}
+.my__cta-leftContent h3,
+.my__cta-rightContent h3 {
+  color: #c59d5f;
+  font-family: "ZCOOL XiaoWei";
+  font-size: 30px;
+  line-height: 40px;
+}
+.my__cta-leftContent h2,
+.my__cta-rightContent h2 {
+  font-family: "ZCOOL XiaoWei";
+  font-size: 36px;
+  line-height: 40px;
+  width: max-content;
+}
+.my__cta-leftContent p,
+.my__cta-rightContent p {
+  color: #c59d5f;
+  margin: 30px 0 40px;
+  font-family: "ZCOOL XiaoWei";
+  font-size: 20px;
+  line-height: 30px; /* 150% */
+  text-transform: capitalize;
+}
+.my__cta-leftContent .my__ctaBtn,
+.my__cta-rightContent .my__ctaBtn {
+  height: auto;
+  padding: 18px 30px !important;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px !important;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+}
+.my__cta-leftContent img,
+.my__cta-rightContent img {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: auto;
+  position: relative;
+  right: 34px;
+}
+.my__cta-rightContent img {
+  right: 24px !important;
+  height: auto;
+  width: 333px;
+  transform: scale(1.3);
 }

@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+  /*
+   * ************************
+   * ==>    Nav Menu
+   * ************************
+   */
   const menuIcon = document.getElementById("menu-icon");
   const navLinks = document.getElementById("dropdown-links");
 
@@ -7,26 +12,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
     navLinks.classList.toggle("show");
   });
 
-  /*  ================
-  ! ==>    Swiper slider 
-  =================== */
+  /*
+   * ************************
+   * ==>    Swiper slider
+   * ************************
+   */
   const slides = document.querySelector(".my__slides");
   const slide = document.querySelector(".my__slide");
   const nextBtn = document.querySelector(".nextBtn");
   const prevBtn = document.querySelector(".prevBtn");
   const slideWidth = slide.clientWidth;
   const totalSlides = document.querySelectorAll(".my__slide").length;
+  console.log(totalSlides);
   let currentIndex = 0;
 
   function updateSlidePosition() {
     slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    console.log(currentIndex * slideWidth, "px");
   }
 
-  prevBtn.addEventListener("click", function nextSlide() {
+  nextBtn.addEventListener("click", function nextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;
     updateSlidePosition();
   });
-  nextBtn.addEventListener("click", function prevSlide() {
+  prevBtn.addEventListener("click", function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     updateSlidePosition();
   });

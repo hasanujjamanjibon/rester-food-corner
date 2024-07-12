@@ -334,6 +334,27 @@ todo: max-width:768px
     padding: 0.8rem 1.6rem !important;
     font-size: 0.775rem !important ;
   }
+  .my__cta-left,
+  .my__cta-right {
+    height: fit-content;
+    background-position: bottom center;
+    padding: 30px 0 20px;
+  }
+  .my__cta-leftContent .col-sm-4,
+  .my__cta-leftContent .col-sm-8,
+  .my__cta-rightContent .col-sm-4,
+  .my__cta-rightContent .col-sm-8 {
+    align-items: center !important;
+  }
+  .my__cta-leftContent,
+  .my__cta-rightContent {
+    position: static !important;
+  }
+  .my__cta-leftContent img,
+  .my__cta-rightContent img {
+    padding: 30px 0 0;
+    position: static;
+  }
 }
 
 /* *********************

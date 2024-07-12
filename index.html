@@ -13,6 +13,8 @@
     <title>Rester | Food Corner</title>
     <!-- Bootsrap css -->
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./vendors/css/swiper.min.css" />
     <!-- css file link -->
     <link rel="stylesheet" href="./resources/css/style.css" />
     <!-- responsive css file -->
@@ -338,8 +340,10 @@
             />
           </div>
         </div>
+
+        <!-- ********Swiper Navigation Section ********** -->
         <div
-          class="my__navigation py-4 d-none d-md-flex justify-content-center align-items-center gap-4"
+          class="my__navigation swiper-pagination py-4 d-none d-md-flex justify-content-center align-items-center gap-4"
         >
           <img
             src="./resources/images/hero-section/banner-dishes/banner-dishes-1.png"
@@ -359,61 +363,99 @@
        ! ==>    Swiper slider section placed Here
        ========================================================  -->
       <section class="my__swiper-slide">
-        <button class="prevBtn d-none d-sm-inline-block position-relative" onclick="prevSlide()">
-          <img src="./resources/images/button/left.png" alt="" />
+        <button class="prevBtn d-none d-sm-inline-block position-relative">
+          <img src="./resources/images/button/left.png" alt="previous button" />
         </button>
 
         <div class="my__slides">
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-1.png" alt="Image 1" />
+            <img
+              src="./resources/images/food-icon/image-4.png"
+              alt="fried rice"
+            />
+            <span class="my__silde-title">fried rice</span>
           </div>
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-2.png" alt="Image 2" />
+            <img
+              src="./resources/images/food-icon/image-3.png"
+              alt="Chicken Soup"
+            />
+            <span class="my__silde-title">Chicken Soup</span>
           </div>
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
+            <img
+              src="./resources/images/food-icon/image-5.png"
+              alt="Beef Noodles"
+            />
+            <span class="my__silde-title">Beef Noodles</span>
           </div>
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-1.png" alt="Image 1" />
+            <img src="./resources/images/food-icon/image-2.png" alt="biryani" />
+            <span class="my__silde-title">biryani</span>
           </div>
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-2.png" alt="Image 2" />
+            <img
+              src="./resources/images/food-icon/image-1.png"
+              alt="Chicken Pasta"
+            />
+            <span class="my__silde-title">Chicken Pasta</span>
           </div>
           <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-1.png" alt="Image 1" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-2.png" alt="Image 2" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-1.png" alt="Image 1" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-2.png" alt="Image 2" />
-          </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-3.png" alt="Image 3" />
+            <img
+              src="./resources/images/food-icon/image-6.png"
+              alt="shrimp soup"
+            />
+            <span class="my__silde-title">shrimp soup</span>
           </div>
         </div>
-        <button class="nextBtn position-relative d-none d-sm-inline-block" onclick="prevSlide()">
-          <img src="./resources/images/button/right.png" alt="" />
+        <button class="nextBtn position-relative d-none d-sm-inline-block">
+          <img src="./resources/images/button/right.png" alt="right button" />
         </button>
+      </section>
+      <!-- ====================================================
+       ! ==>    cta section placed Here
+       ========================================================  -->
+      <section class="my__cta-section row px-2 px-lg-0">
+        <div class="col-12 col-lg-6 my__cta-left text-white text-capitalize">
+          <div class="row my__cta-leftContent">
+            <div class="col-sm-4 d-flex flex-column justify-content-center">
+              <h3>
+                Delicious
+                <h2>HUM BURGER</h2>
+              </h3>
+              <p>limited offer</p>
+              <button class="btn my__ctaBtn">Order Now</button>
+            </div>
+            <div
+              class="col-sm-8 d-flex justify-content-center align-items-center"
+            >
+              <img src="./resources/images/cta/burger.png" alt="burger" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 my__cta-right text-white text-capitalize">
+          <div class="row my__cta-rightContent">
+            <div class="col-sm-4 d-flex flex-column justify-content-center">
+              <h3>
+                Delicious
+                <h2>HUM BURGER</h2>
+              </h3>
+              <p>limited offer</p>
+              <button class="btn my__ctaBtn">Order Now</button>
+            </div>
+            <div
+              class="col-sm-8 d-flex justify-content-center align-items-center"
+            >
+              <img src="./resources/images/cta/pizza.png" alt="pizza" />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- Bootrsap JS -->
     <script src="./vendors/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./vendors/js/swiper.min.js"></script>
     <!-- js file link -->
     <script src="./resources/js/script.js"></script>
   </body>
