@@ -19,11 +19,23 @@
 =================================*/
 
 /* *********************
-todo: max-width:1862px 
+todo: min-width:1862px 
 ************************/
 @media only screen and (min-width: 1862px) {
   .my__contact {
     display: block !important;
+  }
+}
+/* *********************
+todo: max-width:1862px 
+************************/
+@media only screen and (max-width: 1800px) {
+  .my__swiper-slide {
+    margin: 0 2.5rem !important;
+  }
+  .prevBtn,
+  .nextBtn {
+    width: fit-content !important;
   }
 }
 
@@ -211,12 +223,12 @@ todo: max-width:1199px
 @media only screen and (max-width: 1199px) {
   .my__hero-content > h3 {
     font-size: 2.6rem !important;
-    line-height: 2.6rem !important; /* 125% */
+    line-height: 2.6rem !important;
   }
 
   .my__hero-content > h1 {
     font-size: 5.5rem !important;
-    line-height: 5.5rem !important; /* 106.098% */
+    line-height: 5.5rem !important;
   }
   .btn {
     padding: 1rem 3rem !important;
@@ -270,12 +282,12 @@ todo: max-width:768px
   }
   .my__hero-content > h3 {
     font-size: 2rem !important;
-    line-height: 2rem !important; /* 125% */
+    line-height: 2rem !important;
   }
 
   .my__hero-content > h1 {
     font-size: 5rem !important;
-    line-height: 5rem !important; /* 106.098% */
+    line-height: 5rem !important;
   }
   .btn {
     padding: 1rem 2rem !important;

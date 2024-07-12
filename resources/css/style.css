@@ -47,6 +47,10 @@ body {
   font-style: normal;
   color: #1f1f1f;
 }
+button {
+  border: 0;
+  background-color: transparent;
+}
 
 /*
 =================== 
@@ -73,6 +77,9 @@ body {
 }
 .btn:hover {
   background-color: #1f1f1f;
+}
+main {
+  background: #f4efe3;
 }
 /*
 =================== 
@@ -145,7 +152,7 @@ body {
   color: #fff;
   font-family: "ZCOOL XiaoWei", sans-serif;
   font-size: 1.375rem;
-  line-height: 1.75rem; /* 127.273% */
+  line-height: 1.75rem;
 }
 .my__contact-title {
   color: #8e97a6;
@@ -213,7 +220,6 @@ body {
 ? ********************************************/
 .my__hero-section {
   height: calc(100dvh - 6.25rem);
-  /* height: max-content !important; */
 }
 .my__hero-section > .row {
   padding: 0 3.875rem;
@@ -233,12 +239,11 @@ body {
   gap: 3.125rem;
 }
 .my__hero-content > h3 {
-  /* width: max-content !important; */
   color: #c59d5f;
   font-family: "Great Vibes", cursive;
   font-size: 4.5rem !important;
   position: relative;
-  line-height: 3.125rem; /* 125% */
+  line-height: 3.125rem;
   text-transform: capitalize;
 }
 .my__hero-content > h3::before {
@@ -269,7 +274,7 @@ body {
   text-align: center;
   font-family: "ZCOOL XiaoWei", sans-serif;
   font-size: 10.25rem;
-  line-height: 10.875rem; /* 106.098% */
+  line-height: 10.875rem;
   text-transform: capitalize;
   max-width: 50rem;
 }
@@ -277,21 +282,62 @@ body {
   background: #c59d5f !important;
 }
 
-
-.my-hero-content-rightside > .my__banner-dishesImg {
-  /* max-height: auto;
-  width: 790px !important;
-  right: 350px;
-  transform: scale(1.2);
-  top: 200px;
-  position: absolute; */
-
-}
-
-.my__navigation{
+.my__navigation {
   padding: 10px 0;
 }
 .my__navigation img {
   height: 65px;
+  width: auto;
+}
+
+/* *****************************
+! ==> Swiper slider section css Here  
+? *******************************/
+.my__swiper-slide {
+  height: 26.69rem;
+  max-width: 1720px !important;
+  padding: 0 3rem;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.my__slides {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  gap: 1.875rem;
+  padding: 0 0.2rem;
+}
+
+.my__slide {
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  width: 11.875rem;
+  height: 9.375rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+/* .my__slide img {
+  width: 100%;
+  display: block;
+} */
+.my__swiper-slide > .nextBtn {
+  right: -50px;
+  z-index: 1;
+  width: auto;
+}
+.my__swiper-slide > .prevBtn {
+  left: -50px;
+  z-index: 1;
   width: auto;
 }
