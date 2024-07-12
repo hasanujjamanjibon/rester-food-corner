@@ -92,7 +92,7 @@ todo: max-width:1356px
 /* *********************
 todo: max-width:1200px 
 ************************/
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .my__bg-gradient {
     background-image: linear-gradient(
       to right,
@@ -100,19 +100,45 @@ todo: max-width:1200px
       #272727 8.4%
     ) !important;
   }
-}
+  .my-hero-content-rightside {
+    background: transparent !important;
+    background: url("/resources/images/background/icon-Texture.png") #ffffffe6 0
+      0 / 100% 100% no-repeat !important;
+    height: auto !important;
+  }
+  .my__hero-content > h3 {
+    font-size: 2.2rem !important;
+    line-height: 2.2rem !important;
+  }
+
+  .my__hero-content > h1 {
+    font-size: 5rem !important;
+    line-height: 5rem !important;
+  }
+  .btn {
+    padding: 1rem 3rem !important;
+    font-size: 0.8rem !important ;
+  }
+  .my__banner-dishesImg {
+    max-height: 470px !important;
+    max-width: 470px !important;
+  }
+  .my__hero-content {
+    width: max-content !important;
+    gap: 2rem;
+    padding: 30px 0 0 0;
+  }
+} */
 
 /* *********************
-todo: max-width:1024px 
+todo: max-width:1199px 
 ************************/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1199px) {
   .my__hero-content > h3 {
     font-size: 2.6rem !important;
     line-height: 2.6rem !important; /* 125% */
   }
-  .my__hero-section {
-    height: fit-content !important;
-  }
+
   .my__hero-content > h1 {
     font-size: 5.5rem !important;
     line-height: 5.5rem !important; /* 106.098% */
@@ -120,6 +146,9 @@ todo: max-width:1024px
   .btn {
     padding: 1rem 3rem !important;
     font-size: 0.8rem !important ;
+  }
+  .my__hero-section {
+    height: fit-content !important;
   }
   .my__banner-dishesImg {
     max-height: 470px !important;
