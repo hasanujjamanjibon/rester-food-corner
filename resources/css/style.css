@@ -46,6 +46,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #1f1f1f;
+  position: relative;
 }
 button {
   border: 0;
@@ -66,7 +67,7 @@ button {
   background-color: #c59d5f;
   text-transform: uppercase;
   display: flex;
-  padding: 27.8px 59.6px;
+  padding: 1.7375rem 3.725rem;
   justify-content: center;
   align-items: center;
   color: #fff !important;
@@ -194,7 +195,6 @@ main {
   flex-direction: column;
   position: absolute;
   top: -31.25rem;
-  /* z-index: -9999999999999; */
   left: 0;
   width: 100%;
   color: #fff;
@@ -221,19 +221,39 @@ main {
 .my__hero-section {
   height: calc(100dvh - 6.25rem);
 }
-.my__hero-section > .row {
+.my__hero-section .row {
   padding: 0 3.875rem;
   height: fit-content;
 }
 .my__bg-gradient {
-  background-image: linear-gradient(to right, #111111 58.4%, #272727 42.6%);
+  background-image: linear-gradient(
+    to right,
+    #111111 58.4%,
+    #272727 42.6%
+  ) !important;
 }
 .my-hero-content-leftside {
   justify-content: center;
   background: url("/resources/images/background/icon-Texture.png") #ffffffe6 0 0 /
     100% 100% no-repeat !important;
 }
+.swiper-slide {
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  width: 3.125rem;
+  height: 3.125rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
 
+.swiper-pagination-bullet-active {
+  border: 0.125rem solid #fff;
+}
 .my__hero-content {
   width: max-content !important;
   gap: 3.125rem;
@@ -283,10 +303,10 @@ main {
 }
 
 .my__navigation {
-  padding: 17px 0 0;
+  padding: 1.0625rem 0 0;
 }
 .my__navigation img {
-  height: 65px;
+  height: 4.0625rem;
   width: auto;
 }
 
@@ -295,7 +315,7 @@ main {
 ? *******************************/
 .my__swiper-slide {
   height: 25.4375rem;
-  max-width: 1600px !important;
+  max-width: 100rem !important;
   padding: 0 3rem;
   margin: 0 auto !important;
   display: flex;
@@ -329,7 +349,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 43px;
+  gap: 2.6875rem;
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
 }
@@ -337,27 +357,27 @@ main {
   color: #1f1f1f !important;
   text-align: center;
   font-family: "ZCOOL XiaoWei";
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
   text-transform: capitalize;
-  padding-bottom: 60px !important;
+  padding-bottom: 3.75rem !important;
   position: relative;
-  top: -15px;
+  top: -0.9375rem;
 }
 .my__slide img {
   /* position: relative;
-  top: -30px; */
-  height: 118px;
+  top: -1.875rem; */
+  height: 7.375rem;
   width: auto;
-  filter: drop-shadow(1px 17px 10px #bcaeae);
+  filter: drop-shadow(0.0625rem 1.0625rem 0.625rem #bcaeae);
 }
 .my__swiper-slide > .nextBtn {
-  right: -50px;
+  right: -3.125rem;
   z-index: 1;
   width: auto;
 }
 .my__swiper-slide > .prevBtn {
-  left: -50px;
+  left: -3.125rem;
   z-index: 1;
   width: auto;
 }
@@ -366,20 +386,20 @@ main {
 ? ==> CTA section css Here  
 * ********************************/
 .my__cta-section {
-  max-width: 1470px !important;
+  max-width: 91.875rem !important;
   margin: 0 auto !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 20px !important;
+  gap: 1.875rem;
+  margin-bottom: 1.25rem !important;
 }
 
 .my__cta-left,
 .my__cta-right {
   width: 100%;
-  max-width: 630px;
-  height: 349px;
+  max-width: 39.375rem;
+  height: 21.8125rem;
   overflow: hidden;
   flex-shrink: 0;
   background: url("/resources/images/bg-fire.png") #111 no-repeat center;
@@ -388,38 +408,38 @@ main {
 .my__cta-rightContent {
   height: 100%;
   position: relative;
-  left: 40px;
+  left: 2.5rem;
 }
 .my__cta-leftContent h3,
 .my__cta-rightContent h3 {
   color: #c59d5f;
   font-family: "ZCOOL XiaoWei";
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
 }
 .my__cta-leftContent h2,
 .my__cta-rightContent h2 {
   font-family: "ZCOOL XiaoWei";
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   width: max-content;
 }
 .my__cta-leftContent p,
 .my__cta-rightContent p {
   color: #c59d5f;
-  margin: 30px 0 40px;
+  margin: 1.875rem 0 2.5rem;
   font-family: "ZCOOL XiaoWei";
-  font-size: 20px;
-  line-height: 30px; /* 150% */
+  font-size: 1.25rem;
+  line-height: 1.875rem; /* 150% */
   text-transform: capitalize;
 }
 .my__cta-leftContent .my__ctaBtn,
 .my__cta-rightContent .my__ctaBtn {
   height: auto;
-  padding: 18px 30px !important;
+  padding: 1.125rem 1.875rem !important;
   color: #fff;
   font-family: "Open Sans";
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
   font-weight: 600;
   line-height: normal;
   display: inline-flex;
@@ -428,48 +448,48 @@ main {
 .my__cta-rightContent img {
   position: relative;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   width: auto;
   position: relative;
-  right: 34px;
+  right: 2.125rem;
 }
 .my__cta-rightContent img {
-  right: 24px !important;
+  right: 1.5rem !important;
   height: auto;
-  width: 333px;
+  width: 20.8125rem;
   transform: scale(1.3);
 }
 /* **********************************
 ? ==> about section css Here  
 * ********************************/
 .my__about-section {
-  max-width: 1720px;
-  margin: 120px auto 0;
+  max-width: 107.5rem;
+  margin: 7.5rem auto 0;
   background-color: #fff;
-  height: 729px;
+  height: 45.5625rem;
 }
 .my__aboutImag-container {
   display: flex;
   justify-content: center;
   position: relative;
-  left: 180px;
+  left: 11.25rem;
 }
 .reactangle {
   height: 100%;
-  width: 260px;
+  width: 16.25rem;
   background-color: #c59d5f;
   position: relative;
 }
 .circle {
-  height: 628px;
-  width: 628px;
+  height: 39.25rem;
+  width: 39.25rem;
   border-radius: 50%;
   background-color: #c59d5f;
   position: absolute;
   z-index: 1;
   top: 0;
   bottom: 0;
-  left: -170px;
+  left: -10.625rem;
   right: 0;
   margin: auto;
   display: flex;
@@ -477,13 +497,13 @@ main {
   align-items: center;
 }
 .dishes {
-  height: 568px;
-  width: 568px;
+  height: 35.5rem;
+  width: 35.5rem;
   position: absolute;
   z-index: 4;
   top: 0;
   bottom: 0;
-  left: -140px;
+  left: -8.75rem;
   right: 0;
   margin: auto;
 }
@@ -492,107 +512,106 @@ main {
   z-index: 2;
   top: 0;
   bottom: 0;
-  left: -560px;
+  left: -35rem;
   right: 0;
   margin: auto;
 }
 .my__about-content {
-  width: 530px;
+  width: 33.125rem;
 }
 .my__about-content > .leaf-1 {
-  top: -20px;
-  right: -100px;
-  width: 135px;
-  height: 90px;
+  top: -1.25rem;
+  right: -6.25rem;
+  width: 8.4375rem;
+  height: 5.625rem;
 }
 .my__about-content > .leaf-2 {
-  bottom: -20px;
-  right: -100px;
-  width: 135px;
-  height: 90px;
+  bottom: -1.25rem;
+  right: -6.25rem;
+  width: 8.4375rem;
+  height: 5.625rem;
 }
 .about-title {
   color: #c59d5f;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 24px; /* 171.429% */
+  line-height: 1.5rem;
   text-transform: uppercase;
 }
 .about-heading {
   color: #1f1f1f;
   font-family: "ZCOOL XiaoWei";
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 3rem;
+  line-height: 3.625rem;
   text-transform: capitalize;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .about-description {
   color: #5c6574;
-  font-size: 16px;
-  line-height: 26px; /* 162.5% */
-  margin-top: 40px;
-  max-width: 520px;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 2.5rem;
+  max-width: 32.5rem;
 }
 .food-chef-content {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   width: 100%;
 }
 .food-icon,
 .chef-icon {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 .food-chef-content .row {
   width: 100%;
-  gap: 20px !important;
-  border-top: 1px solid #e0e0e0;
+  gap: 1.25rem !important;
+  border-top: 0.0625rem solid #e0e0e0;
 }
 
 .food-chef-content h4 {
   color: #1f1f1f;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.25rem;
   text-transform: capitalize;
-  /* margin-bottom: 20px; */
 }
 .food-chef-content span {
   color: #5c6574;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   display: block;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .food-chef-content .row .col-sm-6 {
-  gap: 20px !important;
-  width: 252px;
-  padding: 30px 0 0;
+  gap: 1.25rem !important;
+  width: 15.75rem;
+  padding: 1.875rem 0 0;
 }
 .food-chef-content .row > div:last-child {
-  border-left: 1px solid #e0e0e0;
-  padding-left: 20px !important;
+  border-left: 0.0625rem solid #e0e0e0;
+  padding-left: 1.25rem !important;
 }
 .food-chef-content .row .col-6 div {
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .bookingBtn {
-  border: 0px solid #000;
-  margin-top: 40px;
+  border: 0rem solid #000;
+  margin-top: 2.5rem;
   padding: 1em 2em;
-  min-width: 191px;
-  min-height: 56px;
+  min-width: 11.9375rem;
+  min-height: 3.5rem;
   background: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   flex-shrink: 0;
   position: relative;
   cursor: pointer;
-  box-shadow: inset -2px 1px 11px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -0.125rem 0.0625rem 0.6875rem rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -607,7 +626,7 @@ a {
   inset: 0;
   fill: none;
   stroke: #000;
-  stroke-width: 5px;
+  stroke-width: 0.3125rem;
   stroke-dasharray: 33 297;
   stroke-dashoffset: 50;
   transition: all 0.5s linear;
@@ -619,7 +638,7 @@ a {
 }
 
 .bookingBtn:hover svg {
-  stroke-width: 3px;
+  stroke-width: 0.1875rem;
   stroke-dashoffset: -500;
 }
 
@@ -627,7 +646,7 @@ a {
   transform: scale(1.001);
   background-color: #a4814d;
 }
-/*  */
+/* Animation css Placed Here */
 .animation {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: scale(1);

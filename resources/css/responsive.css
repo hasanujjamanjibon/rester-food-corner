@@ -71,7 +71,7 @@ todo: max-width:1200px
     gap: 2rem;
     padding: 30px 0 0 0;
   }
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0 3.875rem;
     height: calc(100% - 6rem);
   }
@@ -191,7 +191,7 @@ todo: max-width:1920px
   .my__hero-content {
     padding: 0;
   }
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0px 6.875rem;
   }
 }
@@ -228,7 +228,7 @@ todo: max-width:2560px
     left: -231px !important;
     top: 10px;
   }
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0 13.3rem;
     height: calc(100% - 6rem);
   }
@@ -257,8 +257,8 @@ todo: max-width:1199px
     max-height: 470px !important;
     max-width: 470px !important;
   }
-  .my__hero-section > .row {
-    padding: 0 5.5rem;
+  .my__hero-section .row {
+    padding: 0 !important;
   }
   .my-hero-content-leftside {
     align-items: flex-start !important;
@@ -293,7 +293,7 @@ todo: max-width:1199px
 todo: max-width:992px 
 ************************/
 @media only screen and (max-width: 992px) {
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0 !important;
   }
 }
@@ -305,7 +305,7 @@ todo: max-width:768px
   .my__navigation-lists {
     display: none;
   }
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0 4.5rem;
   }
   .my__hero-content > h3 {
@@ -322,7 +322,7 @@ todo: max-width:768px
     font-size: 0.875rem !important ;
   }
 
-  .my__hero-section > .row {
+  .my__hero-section .row {
     height: fit-content;
     gap: 0 !important;
   }
@@ -362,7 +362,7 @@ todo: max-width:768px
   todo: max-width:600px 
   ************************/
 @media only screen and (max-width: 600px) {
-  .my__hero-section > .row {
+  .my__hero-section .row {
     padding: 0;
   }
   .my__hero-content > h3 {
@@ -478,8 +478,8 @@ todo: max-width:425px
   }
 
   .my__hero-content > h1 {
-    font-size: 5.1rem !important;
-    line-height: 5.1rem !important; /* 106.098% */
+    font-size: 4.1rem !important;
+    line-height: 4.8rem !important;
   }
   .btn {
     padding: 0.7rem 1.5rem !important;
@@ -487,9 +487,9 @@ todo: max-width:425px
   }
   .my__banner-dishesImg {
     max-height: 380px !important;
-    max-width: 380px !important;
+    width: auto !important;
   }
-  .my__hero-section > .row {
+  .my__hero-section .row {
     height: calc(100dvh - 6.25rem) !important;
   }
   .about-heading {
@@ -514,12 +514,12 @@ todo: max-width:375px
 ************************/
 @media only screen and (max-width: 375px) {
   .my__hero-content > h1 {
-    font-size: 3.5rem !important;
-    line-height: 3.5rem !important; /* 106.098% */
+    font-size: 4rem !important;
+    line-height: 4.2rem !important;
   }
   .my__banner-dishesImg {
-    max-height: 350px !important;
-    max-width: 350px !important;
+    max-height: 300px !important;
+    width: auto !important;
   }
   .my__hero-content > h3 {
     font-size: 1.2rem !important;
@@ -534,12 +534,12 @@ todo: max-width:320px
     font-size: 1rem !important;
   }
   .my__hero-content > h1 {
-    font-size: 4rem !important;
-    line-height: 4.5rem !important; /* 106.098% */
+    font-size: 3.7rem !important;
+    line-height: 4rem !important;
   }
   .my__banner-dishesImg {
-    max-height: 300px !important;
-    max-width: 300px !important;
+    max-height: 260px !important;
+    width: auto !important;
   }
   .my__hero-content > h3 {
     font-size: 1rem !important;
