@@ -433,81 +433,78 @@
       <!-- ====================================================
        ! ==>    Swiper slider section placed Here
        ========================================================  -->
-      <section
-        class="animation my__swiper-slide mySwiper2 position-relative w-full"
-      >
-        <!-- Swiper -->
-        <div class="swiper-wrapper w-auto">
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+      <div class="position-relative animation my__swiper-section">
+        <div class="animation my__swiper-slide mySwiper2 w-full">
+          <!-- Swiper -->
+          <div class="swiper-wrapper w-auto">
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/fried-rice.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">fried rice</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/chicken-soup.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">chicken soup</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/beef-noodles.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">beef noodles</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/biriyani.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">biriyani</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/chicken-pasta.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">chicken pasta</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/shrimp-soup.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">shrimp soup</span>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="my__slide">
-              <img
-                src="./resources/images/food-icon/image-5.png"
-                alt="Beef Noodles"
-              />
-              <span class="my__silde-title">Beef Noodles</span>
+            
+            <div class="swiper-slide">
+              <div class="my__slide">
+                <img
+                  src="./resources/images/food-icon/beef-noodles.png"
+                  alt="Beef Noodles"
+                />
+                <span class="my__silde-title">beef noodles</span>
+              </div>
             </div>
           </div>
         </div>
@@ -521,9 +518,7 @@
           src="./resources/images/button/left.png"
           alt="previous button"
         />
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-      </section>
+      </div>
       <!-- ====================================================
        ! ==>    cta section placed Here
        ========================================================  -->
@@ -697,17 +692,19 @@
       });
       var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 1,
-
         spaceBetween: 30,
         navigation: {
           nextEl: ".nextBtn",
           prevEl: ".prevBtn",
         },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
         breakpoints: {
           600: {
             slidesPerView: 3,
             spaceBetween: 30,
-       
           },
           768: {
             slidesPerView: 3,

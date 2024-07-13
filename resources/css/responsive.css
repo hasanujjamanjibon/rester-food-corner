@@ -39,7 +39,17 @@ todo: max-width:1862px
     width: fit-content !important;
   }
 }
-
+/* *********************
+todo: max-width:1862px 
+************************/
+@media only screen and (max-width: 1500px) {
+  .nextBtn {
+    right: 0px;
+  }
+  .prevBtn {
+    left: 0px;
+  }
+}
 /* *********************
 todo: max-width:1200px 
 ************************/
