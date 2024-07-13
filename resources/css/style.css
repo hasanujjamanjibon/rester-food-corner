@@ -283,7 +283,7 @@ main {
 }
 
 .my__navigation {
-  padding: 10px 0;
+  padding: 17px 0 0;
 }
 .my__navigation img {
   height: 65px;
@@ -602,7 +602,7 @@ a {
   text-transform: uppercase;
 }
 
-svg {
+.bookingBtn svg {
   position: absolute;
   inset: 0;
   fill: none;

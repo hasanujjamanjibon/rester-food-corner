@@ -4,6 +4,7 @@
 * max-width:425px
 * max-width:600px
 * max-width:768px
+* max-width:992px
 * max-width:1024px
 * max-width:1200px
 * max-width:1356px
@@ -288,6 +289,15 @@ todo: max-width:1199px
     margin: 120px 10px 0;
   }
 }
+/* *********************
+todo: max-width:992px 
+************************/
+@media only screen and (max-width: 992px) {
+  .my__hero-section > .row {
+    padding: 0 !important;
+  }
+}
+
 /* *********************
 todo: max-width:768px 
 ************************/
