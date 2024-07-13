@@ -31,9 +31,9 @@ todo: min-width:1862px
 todo: max-width:1862px 
 ************************/
 @media only screen and (max-width: 1800px) {
-  .my__swiper-slide {
+  /* .my__swiper-slide {
     margin: 0 2.5rem !important;
-  }
+  } */
   .prevBtn,
   .nextBtn {
     width: fit-content !important;

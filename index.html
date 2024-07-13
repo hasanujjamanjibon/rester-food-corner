@@ -300,7 +300,7 @@
       <!-- ====================================================
        ! ==>    Hero section placed Here
        ========================================================  -->
-      <section class="mySwiper my__bg-gradient animation">
+      <section class="mySwiper my__bg-gradient">
         <div class="swiper-wrapper my__hero-section position-relative z-2">
           <div class="swiper-slide d-block">
             <div class="row">
@@ -426,62 +426,103 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination d-none d-xl-inline-block pb-3"></div>
+        <div class="swiper-pagination"></div>
       </section>
       <!-- ********Swiper Navigation Section ********** -->
 
       <!-- ====================================================
        ! ==>    Swiper slider section placed Here
        ========================================================  -->
-      <section class="my__swiper-slide animation">
-        <button class="prevBtn d-none d-sm-inline-block position-relative">
-          <img src="./resources/images/button/left.png" alt="previous button" />
-        </button>
-
-        <div class="my__slides">
-          <div class="my__slide">
-            <img
-              src="./resources/images/food-icon/image-4.png"
-              alt="fried rice"
-            />
-            <span class="my__silde-title">fried rice</span>
+      <section
+        class="animation my__swiper-slide mySwiper2 position-relative w-full"
+      >
+        <!-- Swiper -->
+        <div class="swiper-wrapper w-auto">
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
-          <div class="my__slide">
-            <img
-              src="./resources/images/food-icon/image-3.png"
-              alt="Chicken Soup"
-            />
-            <span class="my__silde-title">Chicken Soup</span>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
-          <div class="my__slide">
-            <img
-              src="./resources/images/food-icon/image-5.png"
-              alt="Beef Noodles"
-            />
-            <span class="my__silde-title">Beef Noodles</span>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
-          <div class="my__slide">
-            <img src="./resources/images/food-icon/image-2.png" alt="biryani" />
-            <span class="my__silde-title">biryani</span>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
-          <div class="my__slide">
-            <img
-              src="./resources/images/food-icon/image-1.png"
-              alt="Chicken Pasta"
-            />
-            <span class="my__silde-title">Chicken Pasta</span>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
-          <div class="my__slide">
-            <img
-              src="./resources/images/food-icon/image-6.png"
-              alt="shrimp soup"
-            />
-            <span class="my__silde-title">shrimp soup</span>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="my__slide">
+              <img
+                src="./resources/images/food-icon/image-5.png"
+                alt="Beef Noodles"
+              />
+              <span class="my__silde-title">Beef Noodles</span>
+            </div>
           </div>
         </div>
-        <button class="nextBtn position-relative d-none d-sm-inline-block">
-          <img src="./resources/images/button/right.png" alt="right button" />
-        </button>
+        <img
+          class="position-absolute nextBtn"
+          src="./resources/images/button/right.png"
+          alt="next button"
+        />
+        <img
+          class="position-absolute prevBtn"
+          src="./resources/images/button/left.png"
+          alt="previous button"
+        />
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
       </section>
       <!-- ====================================================
        ! ==>    cta section placed Here
@@ -651,6 +692,36 @@
             return `<img src="./resources/images/hero-section/navigation/dishes-${
               index + 1
             }.png" class="${className} ">`;
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".nextBtn",
+          prevEl: ".prevBtn",
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+       
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            centeredSlides: false,
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1400: {
+            centeredSlides: false,
+            slidesPerView: 6,
+            spaceBetween: 30,
           },
         },
       });

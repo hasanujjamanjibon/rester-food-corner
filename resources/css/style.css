@@ -314,9 +314,9 @@ main {
 ! ==> Swiper slider section css Here  
 ? *******************************/
 .my__swiper-slide {
-  height: 25.4375rem;
-  max-width: 100rem !important;
-  padding: 0 3rem;
+  height: 427px;
+  max-width: 1290px !important;
+  padding: 0 10px !important;
   margin: 0 auto !important;
   display: flex;
   justify-content: center;
@@ -325,24 +325,12 @@ main {
   overflow: hidden;
 }
 
-.my__slides {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: transform 0.5s ease-in-out;
-  gap: 1.875rem;
-  padding: 0 0.2rem;
-  height: 20rem;
-}
-
 .my__slide {
   box-sizing: border-box;
   text-align: center;
   position: relative;
-  width: 11.875rem;
-  height: 9.375rem;
+  width: 190px;
+  height: 150px;
   flex-shrink: 0;
   border-radius: 1.875rem;
   display: flex;
@@ -350,7 +338,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2.6875rem;
-
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
 }
 .my__silde-title {
@@ -365,19 +352,17 @@ main {
   top: -0.9375rem;
 }
 .my__slide img {
-  /* position: relative;
-  top: -1.875rem; */
   height: 7.375rem;
   width: auto;
   filter: drop-shadow(0.0625rem 1.0625rem 0.625rem #bcaeae);
 }
 .my__swiper-slide > .nextBtn {
-  right: -3.125rem;
+  right: 0px;
   z-index: 1;
   width: auto;
 }
 .my__swiper-slide > .prevBtn {
-  left: -3.125rem;
+  left: 0px;
   z-index: 1;
   width: auto;
 }
@@ -655,4 +640,62 @@ a {
 .hidden {
   transform: scale(0.9);
   opacity: 0;
+}
+
+/* *********************** */
+
+.mySwiper2 .swiper-slide {
+  /* text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  width: 190px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6875rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+.mySwiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 .swiper {
+  width: 70%;
+  background: #0000;
+  height: 300px;
+  margin: 20px auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.mySwiper2 .swiper-wrapper {
+  position: relative;
+  width: 100% !important;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
+  max-width: 1470px !important;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
