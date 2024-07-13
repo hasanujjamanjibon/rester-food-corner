@@ -44,10 +44,12 @@ todo: max-width:1862px
 ************************/
 @media only screen and (max-width: 1500px) {
   .nextBtn {
-    right: 0px;
+    right: 10px;
+    width: 50px !important;
   }
   .prevBtn {
-    left: 0px;
+    left: 10px;
+    width: 50px !important;
   }
 }
 /* *********************
@@ -315,6 +317,10 @@ todo: max-width:768px
   .my__navigation-lists {
     display: none;
   }
+  .my__cta-leftContent img,
+  .my__cta-rightContent img {
+    width: 300px !important;
+  }
   .my__hero-section .row {
     padding: 0 4.5rem;
   }
@@ -398,7 +404,7 @@ todo: max-width:768px
   .my__cta-leftContent .col-sm-8,
   .my__cta-rightContent .col-sm-4,
   .my__cta-rightContent .col-sm-8 {
-    align-items: start !important;
+    align-items: center !important;
   }
   .my__cta-leftContent,
   .my__cta-rightContent {
@@ -415,7 +421,19 @@ todo: max-width:768px
     line-height: 47px;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 600px) {
+  .my__cta-leftContent .col-sm-4,
+  .my__cta-leftContent .col-sm-8,
+  .my__cta-rightContent .col-sm-4,
+  .my__cta-rightContent .col-sm-8 {
+    align-items: start !important;
+  }
+  .my__cta-leftContent,
+  .my__cta-rightContent {
 
+    left: 21px !important;
+  }
+}
 /* *********************
 todo: max-width:576px 
 ************************/
@@ -454,16 +472,15 @@ todo: max-width:576px
   .bookingBtn a {
     font-size: 12px;
   }
-  .my__cta-leftContent .col-sm-4,
-  .my__cta-leftContent .col-sm-8,
-  .my__cta-rightContent .col-sm-4,
-  .my__cta-rightContent .col-sm-8 {
-    align-items: center !important;
-  }
+
   .my__cta-leftContent,
   .my__cta-rightContent {
     position: relative;
     left: 10px;
+  }
+  .my__cta-leftContent img,
+  .my__cta-rightContent img {
+    width: 250px !important;
   }
 }
 /* *********************

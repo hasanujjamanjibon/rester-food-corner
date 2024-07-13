@@ -529,7 +529,9 @@
           class="col-12 col-lg-6 my__cta-left text-white text-capitalize animation"
         >
           <div class="row my__cta-leftContent">
-            <div class="col-sm-4 d-flex flex-column justify-content-center">
+            <div
+              class="col-sm-4 d-flex flex-column justify-content-center align-items-center align-items-sm-start"
+            >
               <h3>
                 Delicious
                 <h2>HUM BURGER</h2>
@@ -548,7 +550,9 @@
           class="col-12 col-lg-6 my__cta-right text-white text-capitalize animation"
         >
           <div class="row my__cta-rightContent">
-            <div class="col-sm-4 d-flex flex-column justify-content-center">
+            <div
+              class="col-sm-4 d-flex flex-column justify-content-center align-items-center align-items-sm-start"
+            >
               <h3>
                 Delicious
                 <h2>HUM BURGER</h2>
@@ -693,8 +697,9 @@
         },
       });
       var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        centeredSlides: true,
         navigation: {
           nextEl: ".nextBtn",
           prevEl: ".prevBtn",
@@ -704,13 +709,20 @@
           disableOnInteraction: false,
         },
         breakpoints: {
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+            centeredSlides: false,
+          },
           600: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 15,
+            centeredSlides: false,
           },
           768: {
             slidesPerView: 3,
             spaceBetween: 30,
+            centeredSlides: false,
           },
           1024: {
             centeredSlides: false,

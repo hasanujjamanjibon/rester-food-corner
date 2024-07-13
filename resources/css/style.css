@@ -318,7 +318,7 @@ main {
   box-sizing: border-box;
   text-align: center;
   position: relative;
-  width: 190px;
+  width: fit-content !important;
   height: 150px;
   flex-shrink: 0;
   border-radius: 1.875rem;
@@ -326,7 +326,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.6875rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
 }
 
@@ -354,7 +353,6 @@ main {
 }
 .my__swiper-slide {
   height: 427px;
-
   padding: 0 10px !important;
   margin: 0 auto !important;
   display: flex;
@@ -396,8 +394,9 @@ main {
   filter: drop-shadow(0.0625rem 1.0625rem 0.625rem #bcaeae);
 }
 .my__swiper-section {
-  max-width: 1290px !important;
+  max-width: 1330px !important;
   margin: auto;
+
 }
 .nextBtn {
   right: -100px;
